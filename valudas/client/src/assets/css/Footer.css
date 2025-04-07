@@ -1,0 +1,196 @@
+.footer-heading-text {
+    text-align: center;
+    padding: 20px 15px;
+    font-family: "montserrat";
+
+  }
+  
+  .footer-heading-text p {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-heading-text h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  
+  /* ***********************footer-section********************* */
+  .footer-section-container {
+    background-color: #212121; /* Modern dark background */
+    color: #ffffff; /* Light text for readability */
+    padding: 50px 50px;
+    font-family: "montserrat";
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 117px;
+    cursor: pointer;
+  }
+  
+  
+  .footer-section-container .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .footer-section-container .contact-text img {
+    width: 110px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  
+  .footer-section-container .contact-text p,
+  .footer-section-container .contact-text {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #4caf50;
+  }
+  .footer-section-container .contact-text span:hover{
+  color: #ffffff;
+  }
+  
+  #link{
+    position: relative;
+    top: 5px;
+  
+  }
+  
+  .footer-section-container .contact-text a {
+    color: #4caf50; /* Accent color */
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.5s ease;
+  }
+  
+  .footer-section-container .contact-text a:hover {
+    color: #ffffff; /* Hover effect */
+  }
+  
+  .footer-section-container h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4caf50; /* Accent color for headings */
+  }
+  
+  .footer-section-container ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .footer-section-container ul li  {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px 0; 
+    transition: color 0.3s ease;
+  
+  }
+  a{
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px 0; 
+    transition: color 0.3s ease;
+    color: #fff;
+
+  }
+  .footer-section-container ul li:hover{
+    color: #4caf50;
+    border-bottom:1px dotted #ccc ;
+    
+
+  }
+  
+  
+  .footer-section-container ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  .footer-section-container ul li a:hover {
+    color: #4caf50; /* Highlight on hover */
+  }
+  
+  .footer-row {
+    grid-column: 1 / -1; /* Span the entire width */
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: -30px;
+    
+  }
+  
+  .footer-row p {
+    font-size: 14px;
+    /* margin-bottom: 10px; */
+    color: #cccccc;
+  }
+  
+  .footer-row img {
+    width: 30px;
+    height: auto;
+    margin: 0 1px;
+    vertical-align: middle;
+  }
+  
+  .footer-row span {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #cccccc;
+    line-height: 50px;
+  }
+  
+  .footer-row i {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #cccccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-row i:hover {
+    color: #4caf50;
+  }
+  
+  /* Social Icons */
+  .footer-section-container .contact-text a i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #cccccc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section-container .contact-text a i:hover {
+    color: #4caf50;
+  }
+  
+  
+  .whatsapp-icon i{
+    position: fixed;
+    top: 90%;
+    left: 0%;
+    font-size: 40px;
+    color:#ffffff;
+    background-color:#4caf50;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  
+  
+  }
+  .whatsapp-icon i:hover{
+    color: #fff;
+  }
