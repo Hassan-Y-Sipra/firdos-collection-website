@@ -183,7 +183,7 @@ const Chakeout = () => {
       const { order } = data;
   
       const options = {
-        key: process.env.REACT_APP_RAZORPAY_KEY_ID,
+        key:"rzp_test_57SnPwyYn0nU51",
         amount: order.amount,
         currency: "INR",
         name: "Your Shop",

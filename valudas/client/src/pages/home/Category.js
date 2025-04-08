@@ -9,7 +9,7 @@ const Category = () => {
 
   const getCategory = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/getdata");
+      const res = await axios.get("http://localhost:1500/getdata");
       setCategory(res.data);
       console.log(res.data ,"ssaca")
     } catch (error) {

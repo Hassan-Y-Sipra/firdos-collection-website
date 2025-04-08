@@ -9,7 +9,7 @@ require("dotenv").config();
 
 const db = require("./config/Dbconnection");
 const express = require("express");
-const mysql = require("mysql");
+const mysql=require("mysql")
 const crypto = require("crypto");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -175,7 +175,7 @@ const { error } = require("console");
 app.use("/", ProductRoute);
 
 //  Start Server
-const PORT = 3000;
+const PORT = 1500;
 app.listen(PORT, () => {
   console.log(` Server is running on port ${PORT}`);
 });
