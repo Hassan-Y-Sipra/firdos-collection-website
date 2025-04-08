@@ -1,0 +1,18 @@
+.about-us-main {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  top: 100px;
+  padding: 50px;
+  word-spacing: 5px;
+  padding: 140px;
+  margin-bottom: 50px;
+}
+.about-us {
+  font-size: 16px;
+  color: #878787;
+font-family:system-ui,   sans-serif;
+  margin-top: 20px;
+}
