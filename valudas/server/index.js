@@ -152,7 +152,11 @@ app.post('/firdos/webhook', (req, res) => {
   res.status(200).json({ message: 'Webhook received successfully' });
 });
 
-
+// webhook 
+app.get('/', (req, res) => {
+  
+  res.status(200).json({ message: 'Webhook received successfully' });
+});
 
 
 
