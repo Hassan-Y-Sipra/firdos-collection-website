@@ -18,12 +18,7 @@ const jwt = require("jsonwebtoken");
 
 const app = express();
 app.use(
-  cors({
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    origin: ["http://localhost:3001", "http://localhost:3000"],
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
+  cors()
 );
 app.use(bodyParser.json());
 
@@ -168,12 +163,12 @@ app.post('/firdos/webhook', (req, res) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Backend is live ✅');
+  res.send('Welcome to Firdos Collection Backend!');
 });
 
 const ProductRoute = require("./routes/product/ProductRoute");
 const { error } = require("console");
-app.use("/", ProductRoute);
+app.use("/api", ProductRoute);
 
 
 
