@@ -5,7 +5,7 @@ const db=mysql.createConnection({
      host: "trolley.proxy.rlwy.net",
     user: "root",
     password: "gFLLlCQVHsqnHJNLBMoggHohVnUJzbiC",
-    database: "railway",
+    database: "valudas",
     port: 27708
 });
 
