@@ -2,10 +2,11 @@ const mysql=require("mysql");
 
 
 const db=mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"valudas"
+     host: "trolley.proxy.rlwy.net",
+    user: "root",
+    password: "gFLLlCQVHsqnHJNLBMoggHohVnUJzbiC",
+    database: "railway",
+    port: 27708
 });
 
 module.exports=db;
