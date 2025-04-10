@@ -9,7 +9,7 @@ require("dotenv").config();
 
 const db = require("./config/Dbconnection");
 const express = require("express");
-const mysql=require("mysql")
+const mysql=require("mysql2")
 const crypto = require("crypto");
 const cors = require("cors");
 const bodyParser = require("body-parser");
