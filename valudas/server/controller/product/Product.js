@@ -3,7 +3,7 @@ const db = require("../../config/Dbconnection");
 
 const admin = (req, res) => {
   const { username, password } = req.body;
-  const sql = "SELECT * FROM user WHERE username=? and password=?";
+  const sql = "SELECT * FROM users WHERE username=? and password=?";
   db.query(sql, [username, password], (err, result) => {
     if (result.length > 0) {
       res.status(200).send({ message: "succsessful" });
