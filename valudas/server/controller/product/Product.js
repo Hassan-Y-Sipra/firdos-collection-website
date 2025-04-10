@@ -133,6 +133,7 @@ const getslider = (req, res) => {
   const sql = "SELECT * FROM slider";
   db.query(sql, (err, result) => {
     if (err) {
+      console.log(err);
       res.status(500);
     }
     res.send(result);
