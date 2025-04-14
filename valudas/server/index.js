@@ -18,12 +18,7 @@ const jwt = require("jsonwebtoken");
 
 const app = express();
 app.use(
-  cors({
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    origin: ["http://localhost:3001", "http://localhost:3000"],
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
+  app.use(cors());
 );
 app.use(bodyParser.json());
 
