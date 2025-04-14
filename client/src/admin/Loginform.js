@@ -11,12 +11,12 @@ const Loginform = () => {
   const admin = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/adminlogin", {
+      .post("https://firdos-collection-website.onrender.com/adminlogin", {
         username: username,
         password: password,
       })
       .then((res) => {
-          localStorage.setItem("isLogin", "true");
+        localStorage.setItem("isLogin", "true");
         navigate("/dashboard");
       })
       .catch((err) => {

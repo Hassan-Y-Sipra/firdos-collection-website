@@ -91,7 +91,7 @@ const Chakeout = () => {
   //       amount: parseInt(product.price),
   //     });
 
-  //     const response = await fetch("http://localhost:3000/create-order", {
+  //     const response = await fetch("http://localhost:1000/create-order", {
   //       method: "POST",
   //       headers: {
   //         "Content-Type": "application/json",
@@ -157,7 +157,7 @@ const Chakeout = () => {
         amount: parseInt(product.price),
       });
   
-      const response = await fetch("http://localhost:3000/create-order", {
+      const response = await fetch("http://localhost:1000/create-order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -194,7 +194,7 @@ const Chakeout = () => {
           console.log("Payment Success Response:", response);
   
           // ✅ Payment ID ko Backend me save karne ka API call
-          await fetch("http://localhost:3000/save-payment", {
+          await fetch("http://localhost:1000/save-payment", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

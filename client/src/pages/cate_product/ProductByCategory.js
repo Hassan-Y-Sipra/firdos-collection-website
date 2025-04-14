@@ -19,7 +19,7 @@ const ProductByCategory = () => {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/getproductbycate/${id}`
+          `http://localhost:1000/getproductbycate/${id}`
         );
         setProducts(res.data);
         setFilteredProducts(res.data); 

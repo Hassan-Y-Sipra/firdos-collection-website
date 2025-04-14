@@ -16,7 +16,7 @@ const ProductDetails = () => {
     if (!id) return;
     try {
       const res = await axios.get(
-        `http://localhost:3000/getproductdetails/${id}`
+        `http://localhost:1000/getproductdetails/${id}`
       );
       setProductDetail(res.data);
     } catch (err) {
@@ -37,7 +37,7 @@ const ProductDetails = () => {
 
   //   const product_id = id; // Product ID from useParams
 
-  //   const response = await fetch("http://localhost:3000/create-order", {
+  //   const response = await fetch("http://localhost:1000/create-order", {
   //     method: "POST",
   //     headers: {
   //       "Content-Type": "application/json",
