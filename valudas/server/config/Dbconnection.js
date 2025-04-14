@@ -9,4 +9,14 @@ const db=mysql.createConnection({
   port: 27708                      // Railway MySQL port
 });
 
+
+// Connecting to the database
+db.connect(err => {
+  if (err) {
+    console.error('Error connecting to the database:', err.stack);
+    return;
+  }
+  console.log('Connected to the Railway MySQL database');
+});
+
 module.exports=db;
