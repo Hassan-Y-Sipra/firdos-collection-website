@@ -138,7 +138,10 @@ app.post("/create-order", async (req, res) => {
 });
 
 
-
+app.get("/",(req,res)=>{
+  console.log("razorpay webhook data:",req.body);
+  res.status(200).json({message: "WEBHOOK RECEIVED SUCCSESSFULLY"})
+       )
 // webhook 
 app.post('/firdos/webhook', (req, res) => {
   console.log('Webhook Data:', req.body);
