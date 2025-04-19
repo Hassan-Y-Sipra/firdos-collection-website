@@ -147,23 +147,6 @@ app.post('/firdos/webhook', (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const ProductRoute = require("./routes/product/ProductRoute");
 const { error } = require("console");
 app.use("/", ProductRoute);
@@ -173,3 +156,20 @@ const PORT = 1500;
 app.listen(PORT, () => {
   console.log(` Server is running on port ${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
