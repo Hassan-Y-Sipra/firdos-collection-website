@@ -8,7 +8,7 @@ const Herosection = () => {
 
   const getSliderData = async () => {
     try {
-      const res = await axios.get("https://firdos-collection-website.onrender.com//getslider");
+      const res = await axios.get("https://firdos-collection-website.onrender.com/getslider");
       setSlider(res.data);
     } catch (error) {
       console.log(error);
