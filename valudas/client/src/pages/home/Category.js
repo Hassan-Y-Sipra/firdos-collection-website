@@ -9,7 +9,7 @@ const Category = () => {
 
   const getCategory = async () => {
     try {
-      const res = await axios.get("http://localhost:1500/getdata");
+      const res = await axios.get("https://firdos-collection-website.onrender.com/getdata");
       setCategory(res.data);
       console.log(res.data ,"ssaca")
     } catch (error) {
