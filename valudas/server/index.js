@@ -138,10 +138,10 @@ app.post("/create-order", async (req, res) => {
 });
 
 
-app.get("/",(req,res)=>{
-  console.log("razorpay webhook data:",req.body);
-  res.status(200).json({message: "WEBHOOK RECEIVED SUCCSESSFULLY"})
-       )
+app.get("/", (req, res) => {
+  console.log("razorpay webhook data:", req.body);
+  res.status(200).json({ message: "WEBHOOK RECEIVED SUCCESSFULLY" });
+});
 
 
 // webhook 
