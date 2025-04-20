@@ -129,15 +129,27 @@ const addnewProductbycate = (req, res) => {
 };
 
 // ******************store  front ************************
+// const getslider = (req, res) => {
+//   const sql = "SELECT * FROM slider";
+//   db.query(sql, (err, result) => {
+//     if (err) {
+//       res.status(500);
+//     }
+//     res.send(result);
+//   });
+// };
+
 const getslider = (req, res) => {
   const sql = "SELECT * FROM slider";
   db.query(sql, (err, result) => {
     if (err) {
-      res.status(500);
+      console.error("Error in getslider:", err); // log for debugging
+      return res.status(500).send({ error: "Database error" });
     }
     res.send(result);
   });
 };
+
 
 // ************get-product by category  for client site*****
 
