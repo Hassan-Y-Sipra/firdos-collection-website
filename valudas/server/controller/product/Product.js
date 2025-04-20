@@ -138,17 +138,21 @@ const addnewProductbycate = (req, res) => {
 //     res.send(result);
 //   });
 // };
-
 const getslider = (req, res) => {
+  console.log("Hit /getslider route ✅");
+
   const sql = "SELECT * FROM slider";
   db.query(sql, (err, result) => {
     if (err) {
-      console.error("Error in getslider:", err); // log for debugging
-      return res.status(500).send({ error: "Database error" });
+      console.error("❌ MySQL Error in /getslider:", err);
+      return res.status(500).send({ error: "Database query failed" });
     }
+
+    console.log("✅ Query Success:", result);
     res.send(result);
   });
 };
+
 
 
 // ************get-product by category  for client site*****
