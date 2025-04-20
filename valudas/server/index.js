@@ -1,3 +1,5 @@
+
+
 const Razorpay = require("razorpay");
 require("dotenv").config();
 
@@ -19,6 +21,9 @@ const jwt = require("jsonwebtoken");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use('/uploads', express.static('uploads')); // Add this
+
 
 const razorpay = new Razorpay({
   key_id: "rzp_test_57SnPwyYn0nU51",
