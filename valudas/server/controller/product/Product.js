@@ -129,15 +129,15 @@ const addnewProductbycate = (req, res) => {
 };
 
 // ******************store  front ************************
-// const getslider = (req, res) => {
-//   const sql = "SELECT * FROM slider";
-//   db.query(sql, (err, result) => {
-//     if (err) {
-//       res.status(500);
-//     }
-//     res.send(result);
-//   });
-// };
+const getslider = (req, res) => {
+  const sql = "SELECT * FROM slider";
+  db.query(sql, (err, result) => {
+    if (err) {
+      res.status(500);
+    }
+    res.send(result);
+  });
+};
 
 
 
