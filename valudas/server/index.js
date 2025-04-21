@@ -19,7 +19,11 @@ const jwt = require("jsonwebtoken");
 
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://hassan-y-sipra-firdos-collection-website.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(bodyParser.json());
 
 app.use('/uploads', express.static('uploads')); // Add this
