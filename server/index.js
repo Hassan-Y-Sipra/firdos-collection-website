@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const db = require("./config/Dbconnection");
 const express = require("express");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const crypto = require("crypto");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -99,21 +99,13 @@ app.post('/firdos/webhook', (req, res) => {
 });
 
 
-app.get("/test-db", (req, res) => {
-  db.query("SELECT 1 + 1 AS result", (err, result) => {
-    if (err) {
-      console.error("MySQL Error:", err);
-      return res.status(500).json({ message: "Database connection failed", error: err });
-    }
-    res.json({ message: "Database connected successfully", result: result[0].result });
-  });
-});
-
-
-
 app.get("/", (req, res) => {
-  res.send("Welcome to Firdos Collection Backend!");
+  console.log('Webhook Data:', req.body);
+  res.status(200).json({ message: 'Webhook received successfully' });
 });
+
+
+
 
 
 
@@ -122,7 +114,7 @@ const { error } = require("console");
 app.use("/", ProductRoute);
 
 //  Start Server
-const PORT = 2001;
+const PORT = 1500;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

@@ -19,7 +19,7 @@ const ProductByCategory = () => {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:1000/getproductbycate/${id}`
+          `https://firdos-collection-website.onrender.com/getproductbycate/${id}`
         );
         setProducts(res.data);
         setFilteredProducts(res.data); 
