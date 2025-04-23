@@ -8,7 +8,7 @@ const Herosection = () => {
 
   const getSliderData = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/getslider");
+      const res = await axios.get("https://firdos-collection-website.onrender.com/getslider");
       setSlider(res.data);
     } catch (error) {
       console.log(error);
@@ -36,7 +36,8 @@ const Herosection = () => {
         {slider.map((item) => (
           <div key={item} className="slide">
             <img
-              src={`/uploads/${item.image}`} // Adjust path if necessary
+                        src={`./uploads/${item.image}`} // Adjust path if necessary
+
               alt={`Slide ${item + 1}`}
               style={{ width: "100%"}}
             />

@@ -1,11 +1,15 @@
-const mysql=require("mysql");
+const mysql=require("mysql2");
 
 
 const db=mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"valudas"
+  host: 'trolley.proxy.rlwy.net',  // Railway MySQL host
+  user: 'root',                    // Username from Railway (typically root)
+  password: 'gFLLlCQVHsqnHJNLBMoggHohVnUJzbiC',  // Password from Railway
+  database: 'railway',             // Database name from Railway
+  port: 27708                      // Railway MySQL port
 });
+
+
+
 
 module.exports=db;

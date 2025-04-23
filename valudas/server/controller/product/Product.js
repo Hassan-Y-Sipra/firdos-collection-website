@@ -139,6 +139,8 @@ const getslider = (req, res) => {
   });
 };
 
+
+
 // ************get-product by category  for client site*****
 
 const getproductbycategory = (req, res) => {

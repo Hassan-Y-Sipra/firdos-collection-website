@@ -1,3 +1,5 @@
+
+
 const Razorpay = require("razorpay");
 require("dotenv").config();
 
@@ -9,7 +11,7 @@ require("dotenv").config();
 
 const db = require("./config/Dbconnection");
 const express = require("express");
-const mysql=require("mysql")
+const mysql = require('mysql2');  
 const crypto = require("crypto");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -17,15 +19,15 @@ const jwt = require("jsonwebtoken");
 
 
 const app = express();
-app.use(
-  cors({
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    origin: ["http://localhost:3001", "http://localhost:3000"],
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+app.use(cors({
+  origin: 'https://hassan-y-sipra-firdos-collection-website.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(bodyParser.json());
+
+app.use('/uploads', express.static('uploads')); // Add this
+
 
 const razorpay = new Razorpay({
   key_id: "rzp_test_57SnPwyYn0nU51",
@@ -145,29 +147,17 @@ app.post("/create-order", async (req, res) => {
 });
 
 
+app.get("/", (req, res) => {
+  console.log("razorpay webhook data:", req.body);
+  res.status(200).json({ message: "WEBHOOK RECEIVED SUCCESSFULLY" });
+});
+
 
 // webhook 
 app.post('/firdos/webhook', (req, res) => {
   console.log('Webhook Data:', req.body);
   res.status(200).json({ message: 'Webhook received successfully' });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const ProductRoute = require("./routes/product/ProductRoute");
@@ -179,3 +169,20 @@ const PORT = 1500;
 app.listen(PORT, () => {
   console.log(` Server is running on port ${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
