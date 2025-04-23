@@ -36,7 +36,8 @@ const Herosection = () => {
         {slider.map((item) => (
           <div key={item} className="slide">
             <img
-              src={`/uploads/${item.image}`}
+                        src={`./uploads/${item.image}`} // Adjust path if necessary
+
               alt={`Slide ${item + 1}`}
               style={{ width: "100%"}}
             />
