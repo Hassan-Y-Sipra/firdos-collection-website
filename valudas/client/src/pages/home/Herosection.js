@@ -36,7 +36,7 @@ const Herosection = () => {
         {slider.map((item) => (
           <div key={item} className="slide">
             <img
-              src={`https://firdos-collection-website.onrender.com/uploads/${item.image}`}
+              src={`/uploads/${item.image}`}
               alt={`Slide ${item + 1}`}
               style={{ width: "100%"}}
             />
