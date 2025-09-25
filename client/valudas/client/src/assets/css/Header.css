@@ -1,0 +1,55 @@
+.valudas-dashboard-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .valudas-logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .valudas-dashboard-header input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .valudas-dashboard-header div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .valudas-dashboard-header div:last-child span {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .valudas-dashboard-header div:last-child .debug {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin-left: 5px;
+  }
+  
+  .valudas-dashboard-header h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+    cursor: pointer;
+  }
+  

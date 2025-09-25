@@ -1,0 +1,65 @@
+.valudas-dashboard-sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    margin-top: 65px;
+  }
+  
+  .valudas-dashboard-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .valudas-dashboard-sidebar ul li {
+    margin-bottom: 20px;
+  }
+  
+  .valudas-dashboard-sidebar ul li a,
+  .valudas-dashboard-sidebar ul li .Navlink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .valudas-dashboard-sidebar ul li a:hover,
+  .valudas-dashboard-sidebar ul li .Navlink:hover {
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  .valudas-dashboard-sidebar ul li i {
+    padding-right: 7px;
+  }
+  
+  .valudas-dashboard-sidebar button {
+    margin-bottom: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #bb3c49;
+    
+  }
+  
+  .valudas-dashboard-sidebar button:hover {
+    background-color: #c82333;
+  }
+  

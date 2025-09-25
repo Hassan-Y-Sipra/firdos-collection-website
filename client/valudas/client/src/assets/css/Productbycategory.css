@@ -1,0 +1,80 @@
+/* Container for the entire product grid */
+.products-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap rows if content overflows */
+  gap: 22px; /* Add space between product cards */
+  padding: 30px 35px; /* Add padding around the container */
+  background-color: #f9f9f9; /* Light background for contrast */
+  margin-top: 150px;
+}
+
+/* Individual product card */
+.product-card {
+  width: 340px; /* Fixed width */
+  height: 500px; /* Fixed height */
+  background-color: #ffffff; /* White background for product cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  display: flex;
+  padding: 20px;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  /* transition: transform 0.3s, box-shadow 0.3s;  */
+  overflow: hidden; /* Hide overflowing content */
+  text-align: center; /* Center text */
+}
+
+/* Hover effect for product card */
+/* .product-card:hover {
+    transform: scale(1.05); 
+    width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  } */
+
+/* Product image */
+.product-card img {
+  width: 80%; /* Fit the image within the card */
+  height: 90%; /* Fit the image within the card */
+  border-radius: 10%; /* Keep image circular */
+  object-fit: cover; /* Ensure the image is fully visible without distortion */
+  cursor: pointer;
+}
+.product-card img :hover {
+}
+/* Product title */
+.product-card h3 {
+  font-size: 16px; /* Medium font size */
+  color: #e91c1c; /* Dark gray text color */
+  margin: 10px 0 5px; /* Spacing around the title */
+}
+
+/* Product price */
+.product-card p {
+  font-size: 18px; /* Smaller font size for the price */
+  color: #32c27a; /* Lighter gray for contrast */
+  margin: 0; /* Remove default margin */
+}
+.product-card button {
+  background-color: blue;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  border-color: blue;
+  margin-top: 7px;
+}
+.video-slider {
+  width: 100%;
+}
+
+.video-player {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Add spacing for mobile responsiveness */
+@media (max-width: 768px) {
+  .products-container {
+    gap: 10px; /* Reduce gap between cards on smaller screens */
+  }
+}

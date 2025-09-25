@@ -1,0 +1,213 @@
+
+  .add-new-product-btn{
+    display: inline-block;
+    position: relative;
+    left: 1120px;
+
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #28a745; /* Green button */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .add-new-product-btn:hover{
+    background-color: #218838;
+
+  }
+  .dashboard-product-main{
+    display: flex;
+  }
+  .dashboard-product-table{
+    width: 100%;
+    margin-left: 230px;
+    height: auto;
+    padding: 80px 20px;
+    /* overflow-y:scroll; */
+
+  }
+  /* Table Styling */
+  .dashboard-content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-content th,
+  .dashboard-content td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .dashboard-content th {
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .dashboard-content tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping */
+  }
+  
+  .dashboard-content td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .dashboard-content td .fa-solid {
+    cursor: pointer;
+    padding: 5px;
+    color: #495057;
+    transition: color 0.3s ease;
+  }
+  
+  .dashboard-content td .fa-solid:hover {
+    color: #0d6efd; /* Change color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .dashboard-content table {
+      font-size: 12px;
+    }
+  
+    .dashboard-content th,
+    .dashboard-content td {
+      padding: 10px;
+    }
+  }
+  
+
+  /* *********add product popup************* */
+
+  .add-newproduct-overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5)
+
+  }
+  .add-product-container {
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  
+    
+  }
+  
+  .add-product-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .add-product-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between form elements */
+  }
+  
+  .add-product-container label {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #218838;
+
+  }
+  
+  .add-product-container input,
+  .add-product-container select {
+    width: 100%; /* Full-width inputs */
+    padding: 12px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    margin-top: 7px;
+
+  }
+  
+  .add-product-container input[type="file"] {
+    padding: 15px; /* Smaller padding for file input */
+    margin-top: 7px;
+  }
+
+  
+  .close-btn {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+
+  }
+  
+  .addproduct-submit-btn{
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 150px;
+    transition: background-color 0.3s ease;
+  }
+
+/* **********update  product popup*********** */
+.update-submit-btn{
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+.popup-container{
+  width: 1000px;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);}

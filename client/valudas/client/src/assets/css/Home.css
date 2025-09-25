@@ -1,0 +1,236 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/***************** hero section -- slider***************** */
+/* Styles for the slider container */
+.slider-container {
+  width: 100%; /* Adjust the width of the slider */
+  margin: 0 auto; /* Center the slider horizontally */
+  position: relative; /* For positioning dots/arrows */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 3px; /* Round the edges of the slider */
+  overflow: hidden; /* Ensure no overflow beyond borders */
+  margin-top: 140px;
+  padding: 0;
+
+}
+
+/* Image styles inside the slider */
+.slider-container img {
+  width: 100%; /* Ensure images take up full width */
+  height: 530px; /* Maintain aspect ratio */
+  display: block; /* Remove inline gap below images */
+  border-radius: 8px; /* Match slider container border radius */
+}
+
+/* Dots customization */
+.slick-dots {
+  bottom: 10px; /* Adjust position of dots */
+}
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust dot size */
+  color: #ccc; /* Default color for inactive dots */
+  opacity: 1; /* Make inactive dots fully visible */
+}
+.slick-dots li.slick-active button:before {
+  color: #ff6600; /* Color for active dot */
+}
+
+/* Arrow customization */
+
+
+
+/* Hide default arrow background */
+.slick-prev:before,
+.slick-next:before {
+  display: none; /* Hide default arrow content */
+}
+
+/* Hover effect for arrows */
+.slick-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+
+
+/* /**************category**************** */
+
+.category-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  /* text-align: center; */
+}
+    .category-container h1{
+  margin-left: 20px;
+  color: green;
+}
+
+.category-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.category-images div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.category-images div:hover {
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-images img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 450PX;
+  object-fit: cover;
+}
+
+.category-title {
+  font-size: 1.2rem;
+  color: #831717;
+  margin: 15px 0 10px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+.viewmore-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.viewmorebtn:hover {
+  background-color: #0056b3;
+}
+/* *************video section***************** */
+.video-slider {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.video-player {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* ******************************service section *************************** */
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.services i {
+  font-size: 48px;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.services span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+/* **********aboutus-section*************************** */
+.about-section-container {
+  background-color: #f8f9fa;
+  padding: 50px;
+  max-width: 1270px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-section-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section-container h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-section-container p {
+  font-size: 14px;
+  color:#868686;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.about-section-container p:last-child {
+  margin-bottom: 0;
+}
+
+.about-section-container::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #4caf50;
+  margin: 0 auto 20px;
+  border-radius: 4px;
+}
