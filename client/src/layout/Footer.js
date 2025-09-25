@@ -84,10 +84,10 @@ const Footer = () => {
         <div className="links-text">
           <h6>Quick Links</h6>
           <ul>
-            <NavLink to="/privacypolicy">
+           <li>
+  <NavLink to="/privacypolicy">Privacy Policy</NavLink>
+</li>
 
-            <li>Privacy Policy</li>
-            </NavLink>
             <li>Terms and Conditions</li>
             <li>Shipping and Handling</li>
             <li>Returns and Exchange</li>
