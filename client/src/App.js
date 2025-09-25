@@ -11,7 +11,7 @@ import Cate_productRoute from "./routes/Cate_productRoute";
 import ProductByCate from "./admin/ProductByCate";
 import ContactRoute from "./routes/ContactRoute";
 import AboutusRoute from "./routes/AboutusRoute";
-
+import PolicyRoute from "./routes/PolicyRoute";
 const App = () => {
   return (
     <>
@@ -47,6 +47,8 @@ const App = () => {
       <Cate_productRoute />
       <ContactRoute/>
       <AboutusRoute/>
+              <PolicyRoute/>
+
     </>
   );
 };
